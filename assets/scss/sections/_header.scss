@@ -50,8 +50,22 @@
     }
 
     &_tel{
-        @include flex(center,center);
+        display: flex;
         gap: 19px;
+
+
+        &_tel{
+            display: flex;
+            gap: 19px;
+
+            &_text{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28px;
+                color: #424242;
+            }
+
+        }
 
 
         &_text{

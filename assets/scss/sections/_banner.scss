@@ -4,6 +4,7 @@
 
 
     &_row{
+        position: relative;
         @include flex(start,space-between);
 
         @include media(1000){
@@ -22,19 +23,21 @@
 
     &_title{
         font-weight: 600;
-        line-height: 75px;
         color: $text;
         margin-bottom: 32px;
         @include adaptive-value('font-size',64,24);
+        @include adaptive-value('line-height',75,24);
+
+
 
     }
 
     &_subtitle{
         font-weight: 400;
-        line-height: 33px;
         color: $text;
         margin-bottom: 134px;
         @include adaptive-value('font-size',28,18);
+        @include adaptive-value('line-height',33,21);
 
         @include media(1600){
             margin-bottom: 66px;
@@ -50,6 +53,10 @@
         gap: 64px;
         @include media(450){
             gap: 10px
+        }
+        @include media(400){
+            @include flex(start,unset);
+            flex-direction: column
         }
     }
 
@@ -130,7 +137,7 @@
                 right: 0;
             }
 
-            @include media (1000){
+            @include media (1240){
                 top: 100%;
             }
 
