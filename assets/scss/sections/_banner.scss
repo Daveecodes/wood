@@ -127,11 +127,11 @@
                 height: 68px;
             }
 
-            @include media (580){
-                width: 55px;
-                height: 55px;
-                border: 2px solid $btn;
-            }
+            // @include media (580){
+            //     width: 63px;
+            //     height: 63px;
+            //     border: 2px solid $btn;
+            // }
 
 
             &:hover{
