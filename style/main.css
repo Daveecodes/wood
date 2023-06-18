@@ -211,6 +211,12 @@ body {
   border: none;
   transition: all, 0.2s ease-in-out;
 }
+@media screen and (max-width: 780px) {
+  .banner_button {
+    width: 300px;
+    height: 68px;
+  }
+}
 .banner_button:hover {
   background-color: #6D8E5E;
 }
@@ -229,6 +235,12 @@ body {
 .banner_button_social {
   width: 81px;
   border-radius: 50%;
+}
+@media screen and (max-width: 780px) {
+  .banner_button_social {
+    width: 68px;
+    height: 68px;
+  }
 }
 .banner_mobile {
   position: relative;
