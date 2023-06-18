@@ -79,7 +79,7 @@
 
         &_social{
             width: 81px;
-            border-radius: 50%
+            border-radius: 50%;
         }
     }
 
@@ -120,6 +120,17 @@
 
             @include media (1000){
                 top: 100%;
+            }
+
+            @include media (780){
+                width: 68px;
+                height: 68px;
+            }
+
+            @include media (580){
+                width: 55px;
+                height: 55px;
+                border: 2px solid $btn;
             }
 
 
