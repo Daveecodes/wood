@@ -1,0 +1,16 @@
+.footer{
+     position: relative;
+     margin-top: 38px;
+
+     &_text{
+          @include flex(start,start);
+          gap: 30px;
+          font-weight: 400;
+          line-height: 140%;
+          color: #181818;
+          @include adaptive-value('font-size',18,15);
+
+
+        
+     }
+}

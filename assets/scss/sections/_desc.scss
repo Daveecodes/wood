@@ -1,0 +1,34 @@
+.desc{
+    margin-top: 30px;
+
+    &_text{
+        @include flex(start,start);
+        gap: 30px;
+        margin-top: 25px;
+
+        @include media(900){
+            flex-direction: column
+        }
+
+        &_first{
+            @include flex(start,center);
+            gap: 30px;
+
+            @include media(450){
+                flex-direction: column;
+            }
+
+       }
+
+       &_second{
+        @include flex(start,center);
+        gap: 30px;
+
+        @include media(450){
+            flex-direction: column
+        }
+
+
+       }
+    }
+}
